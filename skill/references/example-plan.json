@@ -1,0 +1,46 @@
+{
+  "job": "Compare three open-source static site generators (Hugo, Eleventy, Astro) for a small documentation site and recommend one.",
+  "units": [
+    {
+      "id": "hugo",
+      "title": "Hugo fact sheet",
+      "task": "Research Hugo for a 50-page documentation site. Cover: install steps, build speed claims, templating language, search options, hosting options, licence. One URL per fact. Write the fact sheet to units/hugo.md. Stop at Hugo; do not research other tools.",
+      "wave": 1,
+      "writes": [],
+      "reads": [],
+      "deliverable": "units/hugo.md holds six headed sections, each with at least one sourced fact.",
+      "checks": ["every fact line has a URL", "all six sections are present"]
+    },
+    {
+      "id": "eleventy",
+      "title": "Eleventy fact sheet",
+      "task": "Research Eleventy for a 50-page documentation site. Cover: install steps, build speed claims, templating language, search options, hosting options, licence. One URL per fact. Write the fact sheet to units/eleventy.md. Stop at Eleventy; do not research other tools.",
+      "wave": 1,
+      "writes": [],
+      "reads": [],
+      "deliverable": "units/eleventy.md holds six headed sections, each with at least one sourced fact.",
+      "checks": ["every fact line has a URL", "all six sections are present"]
+    },
+    {
+      "id": "astro",
+      "title": "Astro fact sheet",
+      "task": "Research Astro for a 50-page documentation site. Cover: install steps, build speed claims, templating language, search options, hosting options, licence. One URL per fact. Write the fact sheet to units/astro.md. Stop at Astro; do not research other tools.",
+      "wave": 1,
+      "writes": [],
+      "reads": [],
+      "deliverable": "units/astro.md holds six headed sections, each with at least one sourced fact.",
+      "checks": ["every fact line has a URL", "all six sections are present"]
+    },
+    {
+      "id": "matrix",
+      "title": "Side-by-side comparison table",
+      "task": "Read the three fact sheets from wave 1 and build one comparison table (rows: the six topics, columns: the three tools). Flag any cell where a fact sheet had no data. Write it to units/matrix.md. Do not do new research.",
+      "wave": 2,
+      "writes": [],
+      "reads": ["units/hugo.md", "units/eleventy.md", "units/astro.md"],
+      "after": ["hugo", "eleventy", "astro"],
+      "deliverable": "units/matrix.md holds one table with 6 rows and 3 tool columns, no empty cells (use 'no data found').",
+      "checks": ["table has 6 data rows", "no empty cells"]
+    }
+  ]
+}
